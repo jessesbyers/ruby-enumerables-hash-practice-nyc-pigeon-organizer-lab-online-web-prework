@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 
 def nyc_pigeon_organizer(data)
   name_hash = {}
@@ -34,7 +34,7 @@ name_hash.each do |name, values|
   end
 end
 name_hash
-binding.pry
+#binding.pry
 end
 
 
