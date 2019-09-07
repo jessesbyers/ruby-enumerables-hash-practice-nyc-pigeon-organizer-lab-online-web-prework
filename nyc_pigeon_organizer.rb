@@ -1,19 +1,20 @@
-#require 'pry'
+require 'pry'
+
 def nyc_pigeon_organizer(data)
   new_hash = {}
   data.each do |key, value|
     new_hash = data[value].values.flatten.uniq
-
+  end
+    new_hash
+    binding_pry
+  end
 
 
 #    value.each do |attributes, array|
 #      array.each do |names|
 
 #        if
-end
-  new_hash
-#  binding_pry
-end
+
 
 
 
