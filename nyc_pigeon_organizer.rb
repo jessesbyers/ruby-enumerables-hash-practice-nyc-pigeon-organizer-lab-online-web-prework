@@ -8,6 +8,7 @@ def nyc_pigeon_organizer(data)
 
         if new_hash[names] == nil
           new_hash = {names => values}
+        end
 
 
 
