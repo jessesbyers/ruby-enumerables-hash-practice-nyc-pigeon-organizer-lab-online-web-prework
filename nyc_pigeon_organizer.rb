@@ -6,6 +6,11 @@ def nyc_pigeon_organizer(data)
     attributes.each do |sub_attributes, array|
       array.each do |names|
 
+        if new_hash[names] == nil
+          new_hash = {names => values}
+
+
+
       end
     end
   end
