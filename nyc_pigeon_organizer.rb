@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 
 def nyc_pigeon_organizer(data)
   new_hash = {}
@@ -11,13 +11,12 @@ def nyc_pigeon_organizer(data)
         if !new_hash[names][key]
           new_hash[names][key] = []
         end
-          new_hash[names][key] << sub_attributes.to_s
-        
+          new_hash << sub_attributes.to_s      
       end
     end
   end
     new_hash
-    binding_pry
+#    binding_pry
   end
 
   # if new_hash[names].include? data[key][attributes][array]
