@@ -7,11 +7,11 @@ def nyc_pigeon_organizer(data)
       array.each do |names|
         if new_hash[names] == nil
           new_hash[names] = {}
-          new_hash[names][key] = []
-          new_hash[names][key] << attributes
-
         end
-
+        if !new_hash[names][key]
+          new_hash[names][key] = []
+      
+        end
       end
     end
   end
