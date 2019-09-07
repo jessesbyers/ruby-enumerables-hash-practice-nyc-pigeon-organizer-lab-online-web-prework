@@ -8,11 +8,9 @@ def nyc_pigeon_organizer(data)
         if new_hash[names] == nil
           new_hash[names] = {}
         end
-
-
-
-
-
+        if new_hash[names].include? data[key][attributes][array]
+          new_hash[names][attributes]
+        end
       end
     end
   end
