@@ -5,10 +5,11 @@ def nyc_pigeon_organizer(data)
   data.each do |key, attributes|
     attributes.each do |sub_attributes, array|
       array.each do |names|
+        if new_hash[names] == nil
+          new_hash[names] = {}
+        end
 
-#        if new_hash[names] == nil
-          new_hash = {names => values}
-#        end
+
 
 
 
@@ -19,6 +20,10 @@ def nyc_pigeon_organizer(data)
 #    binding_pry
   end
 
+
+  #        if new_hash[names] == nil
+  #          new_hash = {names => values}
+  #        end
 
 #    value.each do |attributes, array|
 #      array.each do |names|
