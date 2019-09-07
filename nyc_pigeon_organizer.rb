@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
         if new_hash[names] == nil
           new_hash[names] = {}
           new_hash[names][key] = []
-          new_hash[names][key] << attributes
+          new_hash[names][key] << sub_attributes
 
         end
 
