@@ -2,8 +2,12 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   new_hash = {}
-  data.each do |key, value|
-    new_hash = data[value].values.flatten.uniq
+  data.each do |key, attributes|
+    attributes.each do |sub_attributes, array|
+      array.each do |names|
+        new_hash = {names: attributes}.uniq
+      end
+    end
   end
     new_hash
     binding_pry
