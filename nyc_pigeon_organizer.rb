@@ -1,41 +1,53 @@
 #require 'pry'
-
 def nyc_pigeon_organizer(data)
-  name_hash = {}
-  data.each do |attributes, values|
-    values.each do |value, array|
-      array.each do |name|
-
-        if name_hash[name] == nil
-          name_hash[name] = {}
-          name_hash[name][attributes] = []
-
-        else
-          name_hash[name][attributes]
-
-
-        end
-      end
-    end
+  new_hash = {}
+  data.each do |key, value|
+	## code here
   end
-
-name_hash.each do |name, values|
-  values.each do |hashvalue, array|
-    data.each do |attributes, values|
-      values.each do |value, array|
-        array.each do |element|
-
-          if element == name && hashvalue && attributes
-            name_hash[name][hashvalue] << values
-          end
-        end
-      end
-    end
-  end
+  new_hash
+#  binding_pry
 end
-name_hash
-#binding.pry
-end
+
+
+
+# #require 'pry'
+#
+# def nyc_pigeon_organizer(data)
+#   name_hash = {}
+#   data.each do |attributes, values|
+#     values.each do |value, array|
+#       array.each do |name|
+#
+#         if name_hash[name] == nil
+#           name_hash[name] = {}
+#           name_hash[name][attributes] = []
+#
+#         else
+#           name_hash[name][attributes]
+#
+#
+#         end
+#       end
+#     end
+#   end
+#
+# name_hash.each do |name, values|
+#   values.each do |hashvalue, array|
+#     data.each do |attributes, values|
+#       values.each do |value, array|
+#         array.each do |element|
+#
+#           if element == name && hashvalue && attributes
+#             name_hash[name][hashvalue] << values
+#           end
+#         end
+#       end
+#     end
+#   end
+# end
+# name_hash
+# #binding.pry
+# end
 
 
 #problem: when I pull up name_hash, it is structured correctly to start then includes names in an array under each attribute:
