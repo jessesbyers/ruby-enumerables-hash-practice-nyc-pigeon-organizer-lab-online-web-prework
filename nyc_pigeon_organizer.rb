@@ -1,5 +1,3 @@
-#require 'pry'
-
 def nyc_pigeon_organizer(data)
   new_hash = {}
   data.each do |key, attributes|
@@ -16,7 +14,6 @@ def nyc_pigeon_organizer(data)
     end
   end
     new_hash
-#    binding_pry
   end
 
   # if new_hash[names].include? data[key][attributes][array]
